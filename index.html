@@ -127,17 +127,18 @@
   ],
   answer: "E. Dominating discussion"
 },
-        {
-            question: "5. A student has created a new document folder named \"New Folder\" in File Explorer and now needs to rename it to \"Health Informatics Notes\". Which sequence of steps correctly renames the folder?",
-            options: [
-                "A. Double-click the folder's icon, then right-click inside the open folder, and select 'Rename.'",
-                "B. Right-click on \"New Folder\" and select \"Rename.\"",
-                "C. Drag and drop the folder into the 'Rename' panel within the File Explorer Ribbon.",
-                "D. Select the folder and navigate to the 'Hardware and Sound' category in the Control Panel."
-            ],
-            answer: "B. Right-click on \"New Folder\" and select \"Rename.\""
-        },
-        
+
+     {
+  question: "5. Responsible access to files is done through:",
+  options: [
+    "A. Control Panel",
+    "B. Task Manager",
+    "C. Start Menu",
+    "D. File Manager",
+    "E. Desktop"
+  ],
+  answer: "D. File Manager"
+     },       
     ];
 
         let currentQuestionIndex = 0;
@@ -168,6 +169,7 @@
 
         function loadQuestion() {
             if (currentQuestionIndex >= totalQuestions) {
+s) {
                 showFinalScore();
                 return;
             }
@@ -198,8 +200,7 @@
             if (answered) {
                 return; // Prevent multiple clicks on the current question
             }
-            answered = true;
-            nextButton.disabled = false;
+            answered = t            nextButton.disabled = false;
 
             const currentQ = quizData[currentQuestionIndex];
             const isCorrect = selectedOptionText === currentQ.answer;
