@@ -212,7 +212,8 @@
             if (answered) {
                 return; // Prevent multiple clicks on the current question
             }
-            answered = t            nextButton.disabled = false;
+            answered = true;
+nextButton.disabled = false;
 
             const currentQ = quizData[currentQuestionIndex];
             const isCorrect = selectedOptionText === currentQ.answer;
