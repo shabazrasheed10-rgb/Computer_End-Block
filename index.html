@@ -362,11 +362,13 @@
             if (currentQuestionIndex >= totalQuestions)  {
                 showFinalScore();
                 return;
+           
             }
 
             const currentQ = quizData[currentQuestionIndex];
             answered = false;
             nextButton.disabled = true;
+            prevButton.disabled = currentQuestionIndex === 0;
             optionsContainer.innerHTML = '';
 
             // Clean the question number for display (it's prepended in the data for readability)
